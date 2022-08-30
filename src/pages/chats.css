@@ -1,0 +1,80 @@
+.App {
+    text-align: center;
+  }
+  
+  .chat_header {
+    background-color: #023026;
+    padding: 1%;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+  }
+  
+  .chat_header h1 {
+    font-size: 20px;
+    color: #59aaf0;
+    margin: 0;
+  }
+  .messages_area {
+    margin-bottom: 10vh;
+  }
+  
+  .app__form {
+    background-color: #023026;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.5%;
+  }
+  
+  .app__input {
+    background-color: #bad072;
+    border: none;
+    border-radius: 30px;
+    width: 70vw;
+    font-size: larger;
+    padding: 0.5% 5%;
+  }
+  
+  .app__input:focus {
+    outline: none;
+  }
+  .app__input:disabled {
+    cursor: not-allowed;
+    background-color: #b4c08e;
+  }
+  
+  .app__iconButton {
+    border-radius: 50% !important;
+    height: 5vw;
+    width: 5vw;
+    border: none;
+    background-color: #bad072;
+    margin-left: 1%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .app__iconButton:disabled {
+    background-color: #b4c08e;
+    cursor: not-allowed;
+  }
+  
+  /* for Mobiles <=600 px */
+  @media (max-width: 600px) {
+    .chat_header h1 {
+      font-size: 6vw;
+      padding: 5% 0 5% 0;
+    }
+    .app__iconButton {
+      height: 16vw;
+      width: 16vw;
+    }
+    .app__form {
+      padding: 1%;
+    }
+  }
+  
